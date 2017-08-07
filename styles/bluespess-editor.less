@@ -1,0 +1,61 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.bluespess-editor {
+	.icon-state-list {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		background-color: @pane-item-background-color;
+		overflow: auto;
+		.icon-state-list-item {
+			margin: 5px;
+			paddin: 10px;
+			display: inline-block;
+			cursor: pointer;
+			position: relative;
+			.icon-state-img {
+				margin: 0px auto;
+			}
+			.icon-state-label {
+				color: @text-color-highlight;
+				text-overflow: ellipsis;
+				overflow-wrap: break-word;
+				overflow: hidden;
+				text-align: center;
+				height:4em;
+				padding: 0px;
+				display: block;
+			}
+		}
+	}
+	
+	.dirs {
+		width: 32px;
+		height: 32px;
+		background-image: url(atom://bluespess-editor/images/dirs.png);
+		display: inline-block;
+	}
+	.dir0  {background-position:    0px 0px;.dirs;}
+	.dir1  {background-position:  -32px 0px;.dirs;}
+	.dir2  {background-position:  -64px 0px;.dirs;}
+	.dir3  {background-position:  -96px 0px;.dirs;}
+	.dir4  {background-position: -128px 0px;.dirs;}
+	.dir5  {background-position: -160px 0px;.dirs;}
+	.dir6  {background-position: -192px 0px;.dirs;}
+	.dir7  {background-position: -224px 0px;.dirs;}
+	.dir8  {background-position: -256px 0px;.dirs;}
+	.dir9  {background-position: -288px 0px;.dirs;}
+	.dir10 {background-position: -320px 0px;.dirs;}
+	.dir11 {background-position: -352px 0px;.dirs;}
+	.dir12 {background-position: -384px 0px;.dirs;}
+	.dir13 {background-position: -416px 0px;.dirs;}
+	.dir14 {background-position: -448px 0px;.dirs;}
+	.dir15 {background-position: -480px 0px;.dirs;}
+}

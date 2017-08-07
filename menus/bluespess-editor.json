@@ -1,0 +1,26 @@
+{
+	"context-menu": {
+		"atom-text-editor": [
+			{
+				"label": "Toggle bluespess-editor",
+				"command": "bluespess-editor:toggle"
+			}
+		]
+	},
+	"menu": [
+		{
+			"label": "Packages",
+			"submenu": [
+				{
+					"label": "bluespess-editor",
+					"submenu": [
+						{
+							"label": "Toggle",
+							"command": "bluespess-editor:toggle"
+						}
+					]
+				}
+			]
+		}
+	]
+}

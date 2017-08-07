@@ -1,0 +1,17 @@
+{
+	"name": "bluespess-editor",
+	"main": "./lib/bluespess-editor",
+	"version": "0.0.1",
+	"description": "A short description of your package",
+	"keywords": [
+	],
+	"repository": "https://github.com/atom/bluespess-editor",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	},
+	"dependencies": {
+		"etch": "^0.9.0",
+		"fs-plus": "^3.0.0"
+	}
+}
