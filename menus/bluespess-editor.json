@@ -12,11 +12,11 @@
 			"label": "Packages",
 			"submenu": [
 				{
-					"label": "bluespess-editor",
+					"label": "Bluespess",
 					"submenu": [
 						{
-							"label": "Toggle",
-							"command": "bluespess-editor:toggle"
+							"label": "Reload Environment",
+							"command": "bluespess-editor:reload-env"
 						}
 					]
 				}
