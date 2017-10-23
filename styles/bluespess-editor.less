@@ -35,7 +35,7 @@
 			}
 		}
 	}
-	
+
 	.dirs {
 		width: 32px;
 		height: 32px;
@@ -58,4 +58,92 @@
 	.dir13 {background-position: -416px 0px;.dirs;}
 	.dir14 {background-position: -448px 0px;.dirs;}
 	.dir15 {background-position: -480px 0px;.dirs;}
+}
+
+.map-editor {
+	.mapcanvas {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		image-rendering: pixelated;
+	}
+}
+
+.object-tree-view {
+	contain: size;
+	overflow: auto;
+	z-index: 2;
+	-webkit-user-select: none;
+
+	display: flex;
+	flex-direction: column;
+
+	.object-tree-view-root {
+		padding-left: @component-icon-padding;
+		padding-right: @component-padding;
+		background-color: inherit;
+
+		/*
+		 * Force a new stacking context to prevent a large, duplicate paint layer from
+		 * being created for tree-view's scrolling contents that can make the cost of
+		 * layer tree updates scale at 3x the size of the layer rather than the
+		 * optimal 1x.
+		 *
+		 * On high resolution displays, Chromium handles layers for scrolling content
+		 * differently and inadvertently creates a duplicate paint layer the size of
+		 * .tree-view-scroller because descendants of the scroller overlap the
+		 * auto-created layer.
+		 */
+		isolation: isolate;
+
+		// Expands tree-view root to take up full height.
+		// This makes sure that the context menu can still be openend in the empty
+		// area underneath the files.
+		flex-grow: 1;
+
+		// Expands tree-view root to take up as much width as needed by the content.
+		// This makes sure that the selected item's "bar/background" expands to full width.
+		position: relative;
+		min-width: min-content;
+	}
+
+	.object-tree-view-root .list-tree {
+		// Keeps selections expanded while dragging
+		position: static;
+	}
+
+	.entry {
+		// This fixes #110, see that issue for more details
+		&::before {
+			content: '';
+			position: absolute;
+		}
+	}
+}
+
+.variant-view {
+	overflow-y: auto;
+	overflow-x: scroll;
+	white-space: nowrap;
+	.horizontal-node-container {
+		display: inline-block;
+	}
+	.vertical-node-container {
+		display: block;
+	}
+	.variant-node {
+		display: inline-block;
+		margin: 1px;
+	}
+	.variant-leaf {
+		border: 2px solid transparent;
+	}
+	.selected {
+		border: 2px solid @background-color-info;
+		backgroundcolor: @background-color-info;
+	}
 }

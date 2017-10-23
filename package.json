@@ -14,5 +14,12 @@
 		"etch": "^0.9.0",
 		"fs-plus": "^3.0.0",
 		"json-stable-stringify": "^1.0.1"
+	},
+	"consumedServices": {
+		"status-bar": {
+			"versions": {
+				"^1.0.0": "consumeStatusBar"
+			}
+		}
 	}
 }
