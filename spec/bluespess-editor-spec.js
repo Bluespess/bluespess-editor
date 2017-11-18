@@ -1,6 +1,6 @@
-'use babel';
+'use strict';
 
-import BluespessEditor from '../lib/bluespess-editor';
+const BluespessEditor = require('../lib/bluespess-editor');
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //

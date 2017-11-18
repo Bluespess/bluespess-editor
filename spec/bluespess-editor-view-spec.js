@@ -1,6 +1,6 @@
-'use babel';
+'use strict';
 
-import BluespessEditorView from '../lib/bluespess-editor-view';
+const BluespessEditorView = require('../lib/bluespess-editor-view');
 
 describe('BluespessEditorView', () => {
 	it('has one valid test', () => {
