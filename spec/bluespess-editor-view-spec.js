@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
-const BluespessEditorView = require('../lib/bluespess-editor-view');
+const BluespessEditorView = require("../lib/bluespess-editor-view");
 
-describe('BluespessEditorView', () => {
-	it('has one valid test', () => {
-		expect('life').toBe('easy');
-	});
+describe("BluespessEditorView", () => {
+  it("has one valid test", () => {
+    expect("life").toBe("easy");
+  });
 });

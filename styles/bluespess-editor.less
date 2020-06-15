@@ -5,131 +5,179 @@
 @import "ui-variables";
 
 .bluespess-editor {
-	.icon-state-list {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		width: 100%;
-		height: 100%;
-		padding: 10px;
-		background-color: @pane-item-background-color;
-		overflow: auto;
-		.icon-state-list-item {
-			margin: 5px;
-			padding: 10px;
-			display: inline-block;
-			cursor: pointer;
-			position: relative;
-			.icon-state-img {
-				margin: 0px auto;
-			}
-			.icon-state-label {
-				color: @text-color-highlight;
-				text-overflow: ellipsis;
-				overflow-wrap: break-word;
-				overflow: hidden;
-				text-align: center;
-				height:4em;
-				padding: 0px;
-				display: block;
-			}
-		}
-	}
+  .icon-state-list {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: @pane-item-background-color;
+    overflow: auto;
+    .icon-state-list-item {
+      margin: 5px;
+      padding: 10px;
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      .icon-state-img {
+        margin: 0px auto;
+      }
+      .icon-state-label {
+        color: @text-color-highlight;
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
+        overflow: hidden;
+        text-align: center;
+        height: 4em;
+        padding: 0px;
+        display: block;
+      }
+    }
+  }
 
-	.dirs {
-		width: 32px;
-		height: 32px;
-		background-image: url(atom://bluespess-editor/images/dirs.png);
-		display: inline-block;
-	}
-	.dir0  {background-position:    0px 0px;.dirs;}
-	.dir1  {background-position:  -32px 0px;.dirs;}
-	.dir2  {background-position:  -64px 0px;.dirs;}
-	.dir3  {background-position:  -96px 0px;.dirs;}
-	.dir4  {background-position: -128px 0px;.dirs;}
-	.dir5  {background-position: -160px 0px;.dirs;}
-	.dir6  {background-position: -192px 0px;.dirs;}
-	.dir7  {background-position: -224px 0px;.dirs;}
-	.dir8  {background-position: -256px 0px;.dirs;}
-	.dir9  {background-position: -288px 0px;.dirs;}
-	.dir10 {background-position: -320px 0px;.dirs;}
-	.dir11 {background-position: -352px 0px;.dirs;}
-	.dir12 {background-position: -384px 0px;.dirs;}
-	.dir13 {background-position: -416px 0px;.dirs;}
-	.dir14 {background-position: -448px 0px;.dirs;}
-	.dir15 {background-position: -480px 0px;.dirs;}
+  .dirs {
+    width: 32px;
+    height: 32px;
+    background-image: url(atom://bluespess-editor/images/dirs.png);
+    display: inline-block;
+  }
+  .dir0 {
+    background-position: 0px 0px;
+    .dirs;
+  }
+  .dir1 {
+    background-position: -32px 0px;
+    .dirs;
+  }
+  .dir2 {
+    background-position: -64px 0px;
+    .dirs;
+  }
+  .dir3 {
+    background-position: -96px 0px;
+    .dirs;
+  }
+  .dir4 {
+    background-position: -128px 0px;
+    .dirs;
+  }
+  .dir5 {
+    background-position: -160px 0px;
+    .dirs;
+  }
+  .dir6 {
+    background-position: -192px 0px;
+    .dirs;
+  }
+  .dir7 {
+    background-position: -224px 0px;
+    .dirs;
+  }
+  .dir8 {
+    background-position: -256px 0px;
+    .dirs;
+  }
+  .dir9 {
+    background-position: -288px 0px;
+    .dirs;
+  }
+  .dir10 {
+    background-position: -320px 0px;
+    .dirs;
+  }
+  .dir11 {
+    background-position: -352px 0px;
+    .dirs;
+  }
+  .dir12 {
+    background-position: -384px 0px;
+    .dirs;
+  }
+  .dir13 {
+    background-position: -416px 0px;
+    .dirs;
+  }
+  .dir14 {
+    background-position: -448px 0px;
+    .dirs;
+  }
+  .dir15 {
+    background-position: -480px 0px;
+    .dirs;
+  }
 }
 
 .map-editor {
-	.mapcanvas {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0px;
-		top: 0px;
-		right: 0px;
-		bottom: 0px;
-		image-rendering: pixelated;
-	}
+  .mapcanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    image-rendering: pixelated;
+  }
 }
 
 .object-tree-view {
-	contain: size;
-	overflow: auto;
-	z-index: 2;
-	-webkit-user-select: none;
+  contain: size;
+  overflow: auto;
+  z-index: 2;
+  -webkit-user-select: none;
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	.object-tree-view-root {
-		padding-left: @component-icon-padding;
-		padding-right: @component-padding;
-		background-color: inherit;
-		isolation: isolate;
-		flex-grow: 1;
-		position: relative;
-		min-width: min-content;
-	}
+  .object-tree-view-root {
+    padding-left: @component-icon-padding;
+    padding-right: @component-padding;
+    background-color: inherit;
+    isolation: isolate;
+    flex-grow: 1;
+    position: relative;
+    min-width: min-content;
+  }
 
-	.object-tree-view-root .list-tree {
-		position: static;
-	}
+  .object-tree-view-root .list-tree {
+    position: static;
+  }
 
-	.entry {
-		&::before {
-			content: '';
-			position: absolute;
-		}
-	}
+  .entry {
+    &::before {
+      content: "";
+      position: absolute;
+    }
+  }
 
-	.object-tree-thumbnail {
-		max-width: 64px;
-		max-height: 20px;
-		margin: 2px 4px 2px 0px;
-		vertical-align: top;
-	}
+  .object-tree-thumbnail {
+    max-width: 64px;
+    max-height: 20px;
+    margin: 2px 4px 2px 0px;
+    vertical-align: top;
+  }
 }
 
 .variant-view {
-	overflow-y: auto;
-	overflow-x: scroll;
-	white-space: nowrap;
-	.horizontal-node-container {
-		display: inline-block;
-	}
-	.vertical-node-container {
-		display: block;
-	}
-	.variant-node {
-		display: inline-block;
-		margin: 1px;
-	}
-	.variant-leaf {
-		border: 2px solid transparent;
-	}
-	.selected {
-		border: 2px solid @background-color-info;
-		background-color: @background-color-info;
-	}
+  overflow-y: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
+  .horizontal-node-container {
+    display: inline-block;
+  }
+  .vertical-node-container {
+    display: block;
+  }
+  .variant-node {
+    display: inline-block;
+    margin: 1px;
+  }
+  .variant-leaf {
+    border: 2px solid transparent;
+  }
+  .selected {
+    border: 2px solid @background-color-info;
+    background-color: @background-color-info;
+  }
 }
