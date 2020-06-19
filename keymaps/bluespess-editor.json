@@ -1,5 +1,5 @@
 {
-  "atom-workspace": {
-    "ctrl-alt-o": "bluespess-editor:toggle"
-  }
+	"atom-workspace": {
+		"ctrl-alt-o": "bluespess-editor:toggle"
+	}
 }

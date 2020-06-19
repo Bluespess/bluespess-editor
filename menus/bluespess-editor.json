@@ -1,26 +1,26 @@
 {
-  "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle bluespess-editor",
-        "command": "bluespess-editor:toggle"
-      }
-    ]
-  },
-  "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
-        {
-          "label": "Bluespess",
-          "submenu": [
-            {
-              "label": "Reload Environment",
-              "command": "bluespess-editor:reload-env"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"context-menu": {
+		"atom-text-editor": [
+			{
+				"label": "Toggle bluespess-editor",
+				"command": "bluespess-editor:toggle"
+			}
+		]
+	},
+	"menu": [
+		{
+			"label": "Packages",
+			"submenu": [
+				{
+					"label": "Bluespess",
+					"submenu": [
+						{
+							"label": "Reload Environment",
+							"command": "bluespess-editor:reload-env"
+						}
+					]
+				}
+			]
+		}
+	]
 }
