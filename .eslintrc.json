@@ -6,7 +6,7 @@
 		"node": true
 	},
 	"parserOptions": {
-		"ecmaVersion": 8
+		"ecmaVersion": 11
 	},
 	"globals": {
 		"atom": false
