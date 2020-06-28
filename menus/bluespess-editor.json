@@ -15,10 +15,6 @@
 					"label": "Bluespess",
 					"submenu": [
 						{
-							"label": "Toggle Editor Mode",
-							"command": "bluespess-editor:toggle"
-						},
-						{
 							"label": "Reload Environment",
 							"command": "bluespess-editor:reload-env"
 						}

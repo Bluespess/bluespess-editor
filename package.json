@@ -3,15 +3,14 @@
 	"main": "./lib/bluespess-editor",
 	"version": "0.0.1",
 	"description": "A short description of your package",
-	"keywords": [],
+	"keywords": [
+	],
 	"repository": "https://github.com/atom/bluespess-editor",
 	"license": "MIT",
 	"engines": {
 		"atom": ">=1.0.0 <2.0.0"
 	},
 	"dependencies": {
-		"atom": "^1.4.1",
-		"electron": "^9.0.4",
 		"etch": "^0.9.0",
 		"fs-plus": "^3.0.0",
 		"json-stable-stringify": "^1.0.1"
@@ -22,13 +21,5 @@
 				"^1.0.0": "consumeStatusBar"
 			}
 		}
-	},
-	"devDependencies": {
-		"eslint": "^7.3.0",
-		"eslint-config-standard": "^14.1.1",
-		"eslint-plugin-import": "^2.21.2",
-		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^4.2.1",
-		"eslint-plugin-standard": "^4.0.1"
 	}
 }
