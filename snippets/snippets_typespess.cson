@@ -1,0 +1,26 @@
+'.source.js':
+	'chain_func':
+		'prefix': 'cf'
+		'body': '$1.$2 = chain_func($1.$2, this.$2.bind(this))'
+	'component':
+		'prefix': 'comp',
+		'body': """
+			class $1 extends Component {
+				constructor(atom, template) {
+					super(atom, template);
+				}
+			}
+
+			$1.loadBefore = [];
+			$1.depends = [];
+
+			$1.template = {
+				vars: {
+					components: {
+						"$1": {
+
+						}
+					}
+				}
+			};
+		"""

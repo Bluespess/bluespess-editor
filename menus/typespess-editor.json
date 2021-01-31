@@ -2,8 +2,8 @@
 	"context-menu": {
 		"atom-text-editor": [
 			{
-				"label": "Toggle bluespess-editor",
-				"command": "bluespess-editor:toggle"
+				"label": "Toggle typespess-editor",
+				"command": "typespess-editor:toggle"
 			}
 		]
 	},
@@ -12,15 +12,15 @@
 			"label": "Packages",
 			"submenu": [
 				{
-					"label": "Bluespess",
+					"label": "Typespess",
 					"submenu": [
 						{
 							"label": "Toggle Editor Mode",
-							"command": "bluespess-editor:toggle"
+							"command": "typespess-editor:toggle"
 						},
 						{
 							"label": "Reload Environment",
-							"command": "bluespess-editor:reload-env"
+							"command": "typespess-editor:reload-env"
 						}
 					]
 				}

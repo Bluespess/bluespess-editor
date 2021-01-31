@@ -2,33 +2,23 @@
 	"env": {
 		"browser": true,
 		"commonjs": true,
-		"es6": true,
+		"es2020": true,
 		"node": true
-	},
-	"parserOptions": {
-		"ecmaVersion": 11
 	},
 	"globals": {
 		"atom": false
 	},
-	"extends": "eslint:recommended",
-	"rules": {
-		"indent": [
-			"error",
-			"tab"
-		],
-		"semi": [
-			"error",
-			"always"
-		],
-		"strict": [
-			"error",
-			"global"
-		],
-		"linebreak-style": [
-			"off",
-			"unix"
-		],
-		"no-console": "off"
-	}
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 11
+    },
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/no-explicit-any": 0
+    }
 }
